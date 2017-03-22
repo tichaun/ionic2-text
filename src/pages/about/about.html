@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>选择城市</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>省市区选择器</ion-label>
+    <city-picker item-content
+                 [cancelText]="'取消'"
+                 [doneText]="'完成'"
+                 [separator]="' - '"
+                 [citiesData]="cityData"
+                 [(ngModel)]="cityName"
+                 (ionChange)="cityChange($event)">
+
+    </city-picker>
+  </ion-item>
+  <p>地区编码：  {{code}}</p>
+  <button ion-button block (click)="rili()">B日历</button>
+
+</ion-content>

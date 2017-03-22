@@ -1,0 +1,41 @@
+<!--
+  Generated template for the Rili page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>rili</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item (click)="basic()">
+      basic只能选择以后的（单选）
+    </button>
+    <button ion-item (click)="setCssClass()">
+      选择日期范围
+    </button>
+    <button ion-item (click)="dateRange()">
+      date range
+    </button>
+    <button ion-item (click)="maxAndMin()">
+      date max and min
+    </button>
+    <button ion-item (click)="disableWeekdays()">
+      星期天禁用
+    </button>
+    <button ion-item (click)="settingDisplay()">
+      设置标题
+    </button>
+    <button ion-item (click)="daysConfig  ()">
+      days config
+    </button>
+  </ion-list>
+  <p>{{data}}</p>
+</ion-content>
